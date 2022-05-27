@@ -1,0 +1,43 @@
+.btn-container > button {
+  background-color: #6332f8;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.btn-container > button:hover {
+  color: #6332f8;
+  background-color: #fff;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 5vw); */
+
+  /* justify-items: stretch; */
+  /* align-items: stretch; */
+}
+.likes-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  color: #6332f8;
+}
+.one-img-container {
+  display: inline;
+border: 1px solid black;
+}

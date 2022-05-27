@@ -6,13 +6,16 @@
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  /* padding:20px 0; */
 }
 .navbar-icon {
   flex: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid rgb(217, 116, 116);
 }
 .navbar-icon :nth-child(1) {
   flex: 2;
@@ -25,7 +28,6 @@
   width: 100%;
   height: 90%;
   flex: 3;
-  border: 2px solid rgb(134, 13, 13);
 }
 .searchBox {
   width: 100%;
@@ -43,7 +45,7 @@
   padding: 5px 10px;
   border-radius: 5px;
 }
-.navbar-account :nth-child(4) {
+.account-btn {
   background-color: #1bb76e;
   padding: 5px 10px;
   border-radius: 5px;
@@ -54,6 +56,9 @@
 }
 .navbar-post-btn {
   display: flex;
+  margin: 150px;
+  background-color: #1bb76e;
+  border-radius: 5px;
 }
 .navbar-post-btn > div > img {
   width: 50px;
@@ -64,6 +69,8 @@
   font-weight: 500;
   padding: 5px 10px;
   border-radius: 5px;
+  font-weight: bold;
+
   border: none;
   outline: none;
   display: inline-block;

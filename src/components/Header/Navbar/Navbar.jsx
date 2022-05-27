@@ -1,8 +1,10 @@
 import React, { useState, useContext } from "react";
 import "./Navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
+import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
 import { Button } from "../../Button/Button";
 import { InputText } from "../../context/InputText";
+import AddBoxIcon from "@mui/icons-material/AddBox";
 export const Navbar = () => {
   const [search, setsearch] = useState("");
   const { changetext } = useContext(InputText);
@@ -18,12 +20,7 @@ export const Navbar = () => {
       <div className="navbar-icon">
         <div>logo</div>
         <div className="navbar-post-btn">
-          <div>
-            <img
-              src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"
-              alt=""
-            />
-          </div>
+          <AddBoxIcon />
           <button>New Post</button>
         </div>
       </div>
@@ -36,15 +33,14 @@ export const Navbar = () => {
           placeholder="Search "
         />
         <button className="search-btn" onClick={handleClick}>
-          <img alt="" src={SearchIcon} style={{ color: "black" }} />
-          Search
+          <SearchIcon />
         </button>
       </div>
       <div className="navbar-account">
-        <div>Badge</div>
+        <MilitaryTechIcon />
         <div>Go Add-free</div>
-        <div>Sign In </div>
-        <button>Sign Up</button>
+        <button className="account-btn">Sign In </button>
+        <button className="account-btn">Sign Up</button>
       </div>
       <Button />
     </div>

@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 const InputText = createContext();
 const InputTextProvider = ({ children }) => {
   const [data, setdata] = useState([]);
-  const [text, settext] = useState("random");
+  const [text, settext] = useState("funny");
   const [page, setpage] = useState(1);
   const getdata = async () => {
     let access_key = "K962ej_SvQjkMaFXxQ4q70ty-nqlwcQ2sGQ5V-VvuA8";

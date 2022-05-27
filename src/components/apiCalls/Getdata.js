@@ -7,5 +7,5 @@ export const Getdata = () => {
   useEffect(() => {
     getdata();
   }, [text, page]);
-  return <div>Getdata</div>;
+  return <></>;
 };
