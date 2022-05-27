@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import "./Navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
-import { Button } from "../../Button/Button";
+
 import { InputText } from "../../context/InputText";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 export const Navbar = () => {
@@ -42,7 +42,6 @@ export const Navbar = () => {
         <button className="account-btn">Sign In </button>
         <button className="account-btn">Sign Up</button>
       </div>
-      <Button />
     </div>
   );
 };

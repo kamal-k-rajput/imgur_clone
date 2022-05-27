@@ -1,4 +1,4 @@
-// import React, { useState, useEffect } from "react";
+
 import React, { useContext } from "react";
 import { InputText } from "../context/InputText";
 import "./Images.css";
